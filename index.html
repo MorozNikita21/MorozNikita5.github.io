@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Калькулятор цен</title>
+<script src="./script.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+console.log("DOM fully loaded and parsed");
+});
+</script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body style="background-color:#E6E6FA">
+<h1>Калькулятор стоимости цен товара </h1>
+<strong>Цена за 1 товар: </strong>
+<p><input id="num1" /></p>
+<strong>Количество данного товара </strong>
+<p><input id="num2" /></p>
+<br>
+<div class="test">
+<button style = "margin: 5px;" onclick="Calculator()" class="btn-u btn-large">Рассчитать стоимость</button>
+<hr>
+<p id="answer" style = "font-size: large; font-weight: bold;"></p>
+</div>
+</body>
+</html>
